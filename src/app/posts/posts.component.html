@@ -1,0 +1,22 @@
+<div class="row">
+        <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+            <div class="post-preview" *ngIf='posts && posts.length'>
+                <div *ngFor='let post of posts'>
+                    <a href="#">
+                        <h2 class="post-title">
+                            {{post.title}}
+                        </h2>
+                    </a>
+                    <h3 class="post-subtitle">
+                        {{post.summary}}
+                    </h3>
+                    <p>
+                        {{post.content}}
+                    </p>
+                    <hr>
+                </div>
+                
+            </div>
+            <hr>
+        </div>
+    </div>
